@@ -1,0 +1,90 @@
+body {
+	font-family: 'Gmarcket';
+    background: #0052D4;  
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0010BF);  /*Gradient background */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0010BF); /*Gradient background */
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin-bottom: 20px; 
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+#accountSelect{
+    width: 310px;
+    margin-bottom: 10px;
+    padding: 6px;
+    height:38px;
+    font-size:14px;
+}
+
+.center-container{
+    width: 500px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submitButton {
+
+    width: 310px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border:5px;
+    border-color: black;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#logoutButton{
+
+    width: 310px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background-color: grey;
+    color: white;
+    border-radius: 12px;
+    border:5px;
+    border-color: gray;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+/*Font*/
+@font-face {
+	font-family: 'Gmarcket';
+	src: url('./Font/static/GmarketSansTTFMedium.ttf') format('opentype');
+}

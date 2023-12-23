@@ -1,0 +1,267 @@
+body {
+	font-family: 'Gmarcket';
+    background: #0052D4;  
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0010BF);  /*Gradient background */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0010BF); /*Gradient background */
+    background-size: 100% 100%;
+    animation: gradient 20s ease infinite;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin-bottom: 20px; 
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.login-container, #forgotPasswordForm {
+    width: 500px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#loginForm{
+    justify-content: center;
+}
+
+.login-container h1 {
+    margin: 0 0 20px;
+    color: white;
+}
+
+.login-container input[type="text"]{
+    justify-content: center;
+    width: 395px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+
+.login-container input[type="password"] {
+    justify-content: center;
+    width: 395px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+
+#loginButton{
+    justify-content: center;
+    width: 411.07px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+
+    color:black;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#signupButton{
+    justify-content: center;
+    width: 411.07px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+
+    color:white;
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.divisionLine{ /*For DicisionLine between Login and Signup button */
+
+    display:flex;
+    flex-basis: 100%;
+    align-items:center;
+    color:black;
+    font-size: small;
+    margin:8px 0px;
+    justify-content: center;
+}
+
+.divisionLine:before{
+    content: '';
+    flex-grow:0.37;
+    margin:0px 12px;
+    background:rgba(0, 0, 0, 0.35);
+    height: 1px;
+    width:100px;
+    font-size: 0px;
+    line-height:0px;
+}
+
+.divisionLine:after {
+
+    content: '';
+    flex-grow:0.37;
+    margin:0px 12px;
+    background:rgba(0, 0, 0, 0.35);
+    height: 1px;
+    width:100px;
+    font-size: 0px;
+    line-height:0px;
+}
+
+
+.button-container {
+    justify-content: center;
+    width:500px;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+/*Signup.php Title */
+
+#signupTitle {
+    justify-content: center;
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Horizontal centering */
+    margin: 0 0 20px;
+    color: white;
+}
+
+/* Signup.php Input Form*/
+#firstName, #lastName, #address, #email, #passwordSignup {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+/*Signup.php Button*/
+
+#cancelButton{
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    width:200px;
+    border: none; /* Remove the border */
+    border-radius: 3px;
+    cursor: pointer;
+
+
+    
+}
+
+#submitButton{
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width:200px;
+    border: none; /* Remove the border */
+    border-radius: 3px;
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+/*ForgotPassword.php*/
+/*ForgotPassword.php Button*/
+#resetPasswordButton{
+
+    width: 310px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border-style:none;
+    font-weight: normal;
+
+}
+
+#user_email{
+    width: 280px;
+    padding: 10px;
+}
+
+
+.login-container-forgotPass, #errorContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.forgotPasswordContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.forgotPasswordContainer > div {
+    margin-bottom: 2px; /* Adjust the margin as needed */
+}
+
+
+.error-message {
+    color: red;
+    float: left;
+    margin-left: 50px;
+    text-align: CENTER;
+}
+
+
+/*Font*/
+@font-face {
+	font-family: 'Gmarcket';
+	src: url('./Font/static/GmarketSansTTFMedium.ttf') format('opentype');
+}
